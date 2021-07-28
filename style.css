@@ -1,0 +1,89 @@
+header {
+  min-height: 940px;
+  background-size: cover;
+  background-image: url("./newspaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+
+.heading{
+    font-size: 180px ;
+    font-family: Trattatello;
+    font-weight: 950;
+}
+.article-item {
+    display: grid;
+    gap: 1rem 2rem;
+    max-width: 25rem;
+  }
+  .section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 3rem 2rem;
+    justify-items: center;
+  }
+  .card{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 7px;
+    margin-bottom: 100px;
+  }
+  .img{
+    border-radius: 50%;
+  }
+  img{
+    border-radius: 15%;
+  }
+  .links a {
+    background: var(--clr-white);
+    color: var(--clr-grey-5);
+    font-size: 2.1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    transition: var(--transition);
+    font-weight: bold;
+    padding: 0.75rem 0;
+  }
+  .links-container {
+    height: 0;
+    transition: var(--transition);
+  }
+  .typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 10.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .c {
+    top: 300px;
+  } 
+  .typewriter{
+    color: rgb(4, 0, 255);
+  }
+  .x{
+    border:3px solid rgb(6, 109, 23);
+    border-radius: 15%;
+    margin-top: 70px;
+    margin-left: 200px;
+  }
